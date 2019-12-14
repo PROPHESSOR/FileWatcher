@@ -1,9 +1,8 @@
-var app = {
-    initialize: function() {
-        document.addEventListener('deviceready', this.onDeviceReady, false);
-    },
-
-    onDeviceReady: function() {
-        console.log("Device ready");
-    },
-};
+var app = new Vue({
+    el: '#app',
+    data: function() {
+        return {
+            test: 'Hello world'
+        }
+    }
+});
